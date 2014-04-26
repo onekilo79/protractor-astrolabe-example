@@ -7,11 +7,9 @@ exports.config = {
 
 	seleniumArgs: [],
 	verbose: true,
-	specs: '../e2e/protractor/**/*.spec.js',
+	specs: ['../e2e/protractor/**/*.spec.js'],
 
-	capabilities: {
-		browserName: process.env.KARMA_BROWSER || 'firefox'
-	},
+	capabilities: 'firefox',
 
 	rootElement: 'body',
 
