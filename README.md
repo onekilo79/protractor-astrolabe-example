@@ -31,9 +31,12 @@ Not all are required for the running of this project they are shown to get more 
 
 [Protractor](https://github.com/juliemr/protractor) End to end tests using selenium.
 
+[Protractor API](https://github.com/angular/protractor/blob/master/docs/api.md) more information about interacting with the page and its elements.
+
 [Astrolabe](https://github.com/stuplum/astrolabe) Page object pattern style protractor test.
 
 [Grunt-Protractor-runner](https://github.com/teerapap/grunt-protractor-runner) grunt runner for protractor.
+
 
 ##Running
 
