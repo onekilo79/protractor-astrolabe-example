@@ -42,7 +42,7 @@ Not all are required for the running of this project they are shown to get more 
 [Bower](https://github.com/bower/bower) package manager for the front end package management.
 
 ##Creating skeleton/base project
-The following are not needed for running this exmple.
+The following are not needed for running this example.
 
 [Yeoman](http://yeoman.io) node project skeleton generator
 
@@ -89,7 +89,7 @@ The selenium stand-alone can take 10 seconds to start so you do not want that pe
 
 Best to have the stand-alone running, and then after you make changes to a test, then run the tests and if they fail, they fail really fast.
 
-You can setup the grunt-protractor-runner to start up selenium each time your run your end to end tests but you then have to take the 10 second penality.  I will not cover how to do this please see the grunt-protractor-runner documentation to see this.
+You can setup the grunt-protractor-runner to start up selenium each time your run your end to end tests but you then have to take the 10 second penalty.  I will not cover how to do this please see the grunt-protractor-runner documentation to see this.
 
 
 
@@ -131,7 +131,7 @@ There will be information printed on the command line of the tests being run and
 
 #Notes 
 
-##using Chrome for running yoru tests
+##using Chrome for running your tests
 If you change to using chrome in the protractor.conf.js
 
 	capabilities { 'chrome' }
