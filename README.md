@@ -42,11 +42,11 @@ webdriver-manager update
 webdriver-manager start
 
 ###Purpose
-The selenium engine can take 10 seconds to start so you do not want that penaltiy every time you run your tests.  
+The selenium stand-alone can take 10 seconds to start so you do not want that penaltiy every time you run your tests.  
 
-Best to have the engine running, and then after you make changes to a test, then run the tests and if they fail, they fail really fast.
+Best to have the stand-alone running, and then after you make changes to a test, then run the tests and if they fail, they fail really fast.
 
-###How we use the selenium engine
+###How we use the selenium stand-alone
 The protractor.conf.js in test/config/protractor.conf.js has a string that becomes
 
 seleniumAddress: 'http://localhost::4444/wd/hub',
