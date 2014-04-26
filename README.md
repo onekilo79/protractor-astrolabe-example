@@ -89,6 +89,10 @@ The selenium stand-alone can take 10 seconds to start so you do not want that pe
 
 Best to have the stand-alone running, and then after you make changes to a test, then run the tests and if they fail, they fail really fast.
 
+You can setup the grunt-protractor-runner to start up selenium each time your run your end to end tests but you then have to take the 10 second penality.  I will not cover how to do this please see the grunt-protractor-runner documentation to see this.
+
+
+
 ###How we use the selenium stand-alone
 The protractor.conf.js in test/config/protractor.conf.js has a string that becomes
 
@@ -110,7 +114,6 @@ Create the second terminal window and run the following.
 grunt serve
 
 This will now open a browser window showing you a single input box running on the yeoman default port 
-
 http:localhost:9000/#/
 
 
@@ -124,10 +127,26 @@ You will see it pop up a selenium firefox browser and run the test.  After the t
 There will be information printed on the command line of the tests being run and assertions.
 
 
-#Note on using Chrome for tests
+#Notes 
+
+##using Chrome for running yoru tests
 If you change to using chrome in the protractor.conf.js
 
 capabilities { 'chrome' }
 
 The browser window will open behind the terminal window.  
+
+##Grunt and watch
+A grunt watch will trigger tasks based upon any changes for files that are being watched.  
+
+I have not included the files under end to end tests as a watch in grunt.  
+
+End to end tests are slow.  They start up browsers do interactions, wait for things to happen.  
+
+I do not want the whole test suite running until I have made all my changes.  
+
+Having browser windows pop up upon every save is pretty annoying and only after you have made all your changes is it valid to have the tests run.  
+
+Regular js tests run so fast via the browser or phantomjs it is valid to have the entire test suite run upon each save.
+
 
