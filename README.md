@@ -1,11 +1,38 @@
 protractor-astrolabe-example
 ============================
 
-Tiny example showing protractor end to end testing using jasmine with the astrolabe library's page object pattern.
+This is a tiny example showing end to end browser based testing for a node project. 
 
-The project was generated using yeoman and is an angular example project.
+We use protractor for our test library
 
-This is a very simple example showing the setup of the page object pattern for writing end to end tests utilising protractor in jasmine tests.  
+This is a very simple example project showing the setup of the page object pattern for writing end to end tests utilising protractor in jasmine tests.  
+
+
+#Projects used in this example
+
+##Testing
+
+[Jasmine](http://jasmine.github.io/) test libary that the test is written in.
+
+[Protractor](https://github.com/juliemr/protractor) End to end tests using selenium.
+
+[Astrolabe](https://github.com/stuplum/astrolabe) Page object pattern style protractor test.
+
+[Grunt-Protractor-runner](https://github.com/teerapap/grunt-protractor-runner) grunt runner for protractor.
+
+##Running
+
+[Grunt-cli](https://github.com/gruntjs/grunt-cli) run grunt build files from the command line.
+
+[Bower](https://github.com/bower/bower) package manager for the front end package management.
+
+##Creating base project
+
+[Yeoman](http://yeoman.io) node project skeleton generator
+
+[Angular-generator](https://github.com/yeoman/generator-angular) used to generate the angular project skeleton via yeoman.
+
+[Angularjs](http://angularjs.org) example node project that we generate via yeoman.
 
 
 #Assumed installs on command line
