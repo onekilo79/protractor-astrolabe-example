@@ -19,7 +19,7 @@ This is a very simple example showing the setup of the page object pattern for w
 #How to run project
 You will need to start 3 different terminal windows all started from the same project folder where the source was cloned to run this.
 
-1. one window for the webdriver/selenium engine
+1. one window for the webdriver/selenium stand-alone process.
 1. second window to have a running project serving up your webpages.
 1. third window from you to run the protractor browser based tests
 
