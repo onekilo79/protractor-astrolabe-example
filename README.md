@@ -72,17 +72,17 @@ Create a terminal window and navigate to the project source.
 ##Install protractor
 
 ###NPM install
-install -g protractor
+	install -g protractor
 
 ###Get chromedriver if you want to use chrome for tests
-webdriver-manager update
+	webdriver-manager update
 
 
 
 #Setup environment, and run the tests
 
 ##1. Start selenium stand-alone on command line
-webdriver-manager start
+	webdriver-manager start
 
 ###Purpose
 The selenium stand-alone can take 10 seconds to start so you do not want that penalty every time you run your tests.  
@@ -96,7 +96,7 @@ You can setup the grunt-protractor-runner to start up selenium each time your ru
 ###How we use the selenium stand-alone
 The protractor.conf.js in test/config/protractor.conf.js has a string that becomes
 
-seleniumAddress: 'http://localhost::4444/wd/hub',
+	seleniumAddress: 'http://localhost::4444/wd/hub',
 
 This is the default address for the selenium stand-alone that you just started above.
 
@@ -106,21 +106,23 @@ Create the second terminal window and run the following.
 
 ###Install all the project dependencies then run the project.
 
-1. npm install
-1. bower install
+	npm install;
+	bower install
 
 
 ##Start the project
-grunt serve
 
-This will now open a browser window showing you a single input box running on the yeoman default port 
-http:localhost:9000/#/
+	grunt serve
+
+This will now open a browser window showing you a single input box running on the port and location defined in the grunt script.  For this example it will be.
+
+	http:localhost:9000/#/
 
 
 ##3. Run the protractor tests
 Create the third terminal window and run the following.
 
-grunt protractor:e2e
+	grunt protractor:e2e
 
 You will see it pop up a selenium firefox browser and run the test.  After the test is finished it will close the browser window.
 
@@ -132,7 +134,7 @@ There will be information printed on the command line of the tests being run and
 ##using Chrome for running yoru tests
 If you change to using chrome in the protractor.conf.js
 
-capabilities { 'chrome' }
+	capabilities { 'chrome' }
 
 The browser window will open behind the terminal window.  
 
