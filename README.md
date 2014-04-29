@@ -1,14 +1,16 @@
 protractor-astrolabe-example
 ============================
-#Explanation 
+#Explanation
 
-This is a tiny example project showing end to end browser based testing for a node project. 
+This is a tiny example project showing end to end browser based testing for an angularjs project.
+
+Protractor is a tool to do end to end testing written
 
 We write a test in jasmine which uses protractor in the background to start a browser and run the tests.
 
-Astrolabe is required to build a page object.  
-This allows us to break a html page up into components.  
-This allows the test to be less brittle when the styling of the page changes.  
+Astrolabe is required to build a page object.
+This allows us to break a html page up into components.
+This allows the test to be less brittle when the styling of the page changes.
 [Page object pattern explained](https://code.google.com/p/selenium/wiki/PageObjects)
 
 This is a very simple example project showing the setup of the components.
@@ -18,7 +20,7 @@ There is a simple js jasmine test (search.spec.js) validating:
 
 1. we can open a html page at an expected url
 1. see there is an input box on a page.
-1. input text upon that input box.  
+1. input text upon that input box.
 1. see the text we imputed in the expected input box.
 
 
@@ -29,7 +31,7 @@ Not all are required for the running of this project they are shown to get more 
 
 [Jasmine](http://jasmine.github.io/) test library that the tests are written in.
 
-[Protractor](https://github.com/juliemr/protractor) End to end tests using selenium.
+[Protractor](https://github.com/angular/protractor) End to end tests using selenium for angularjs projects.
 
 [Protractor API](https://github.com/angular/protractor/blob/master/docs/api.md) more information about interacting with the page and its elements.
 
@@ -59,7 +61,7 @@ The following are not needed for running this example.
 1. Java 6 or above on the command line as it is needed to run the selenium stand-alone.
 1. npm global installs
 	1. grunt-cli
-	1. bower 
+	1. bower
 1. Firefox installed
 
 #How to run project
@@ -88,7 +90,7 @@ Create a terminal window and navigate to the project source.
 	webdriver-manager start
 
 ###Purpose
-The selenium stand-alone can take 10 seconds to start so you do not want that penalty every time you run your tests.  
+The selenium stand-alone can take 10 seconds to start so you do not want that penalty every time you run your tests.
 
 Best to have the stand-alone running, and then after you make changes to a test, then run the tests and if they fail, they fail really fast.
 
@@ -103,8 +105,8 @@ The protractor.conf.js in test/config/protractor.conf.js has a string that becom
 
 This is the default address for the selenium stand-alone that you just started above.
 
- 
-##2. Install project 
+
+##2. Install project
 Create the second terminal window and run the following.
 
 ###Install all the project dependencies then run the project.
@@ -132,25 +134,25 @@ You will see it pop up a selenium firefox browser and run the test.  After the t
 There will be information printed on the command line of the tests being run and assertions.
 
 
-#Notes 
+#Notes
 
 ##using Chrome for running your tests
 If you change to using chrome in the protractor.conf.js
 
 	capabilities { 'chrome' }
 
-The browser window will open behind the terminal window.  
+The browser window will open behind the terminal window.
 
 ##Grunt and watch
-A grunt watch will trigger tasks based upon any changes for files that are being watched.  
+A grunt watch will trigger tasks based upon any changes for files that are being watched.
 
-I have not included the files under end to end tests as a watch in grunt.  
+I have not included the files under end to end tests as a watch in grunt.
 
-End to end tests are slow.  They start up browsers do interactions, wait for things to happen.  
+End to end tests are slow.  They start up browsers do interactions, wait for things to happen.
 
-I do not want the whole test suite running until I have made all my changes.  
+I do not want the whole test suite running until I have made all my changes.
 
-Having browser windows pop up upon every save is pretty annoying and only after you have made all your changes is it valid to have the tests run.  
+Having browser windows pop up upon every save is pretty annoying and only after you have made all your changes is it valid to have the tests run.
 
 Regular js tests run so fast via the browser or phantomjs it is valid to have the entire test suite run upon each save.
 
