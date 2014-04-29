@@ -4,7 +4,7 @@ protractor-astrolabe-example
 
 This is a tiny example project showing end to end browser based testing for an angularjs project.
 
-Protractor is a tool to do end to end testing written
+Protractor is a tool to do end to end browser based testing for angularjs projects.
 
 We write a test in jasmine which uses protractor in the background to start a browser and run the tests.
 
