@@ -22,5 +22,20 @@ describe('Search Spec |', function () {
 			searchPage.searchBox.sendKeys('blue');
 			expect(searchPage.searchBox.getAttribute('value')).toEqual('blue');
 		});
+
+		it('can find repeating elements on page', function(){
+
+			//awsomeThings are done via a findElements call which is async so you need to do a flush to interact with the values
+			searchPage.awsomeThings.then( function ( rows ){
+				expect( rows.length ).toEqual( 3 );
+			});
+
+			//index 1 is the first entry
+			//look for the name of the first element
+			searchPage.awsomeThing( 1 ).name.getText().then( function ( textValue ) {
+				 return expect( textValue ).toEqual( 'HTML5 Boilerplate' );
+			});
+
+		});
 	});
 });
