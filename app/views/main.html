@@ -1,7 +1,10 @@
 Search box example for testing <input class="searchBox" name="Search"></input>
 
 <ul>
-	<li class="thing" ng-repeat="thing in awesomeThings">
-		{{thing}}
+	<li class="thing" ng-repeat="thing in awesomeThings.things">
+		<ul>
+			<li class="name">{{thing.name}}</li>
+			<li class="type"> {{thing.type}}</li>
+		</ul>
 	</li>
 </ul>

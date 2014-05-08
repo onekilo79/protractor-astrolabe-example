@@ -2,9 +2,11 @@
 
 angular.module('protractorAstrolabeExampleApp')
 	.controller('MainCtrl', function ($scope) {
-		$scope.awesomeThings = [
-			'HTML5 Boilerplate',
-			'AngularJS',
-			'Karma'
-		];
+		$scope.awesomeThings =
+			{ things: [
+			{name: 'HTML5 Boilerplate', type: 'library'},
+			{name: 'AngularJS', type: 'library'},
+			{name: 'Karma', type: 'testing library'}
+			]}
+		;
 	});
