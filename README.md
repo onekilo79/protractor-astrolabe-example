@@ -139,7 +139,7 @@ There will be information printed on the command line of the tests being run and
 ##using Chrome for running your tests
 If you change to using chrome in the protractor.conf.js
 
-	capabilities { 'chrome' }
+	capabilities: { browserName: 'chrome'},
 
 The browser window will open behind the terminal window.
 
