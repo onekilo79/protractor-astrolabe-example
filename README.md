@@ -18,10 +18,12 @@ This is a very simple example project showing the setup of the components.
 ###What the project tests
 There is a simple js jasmine test (search.spec.js) validating:
 
-1. we can open a html page at an expected url
+1. we can open a html page at an expected url.
 1. see there is an input box on a page.
 1. input text upon that input box.
 1. see the text we imputed in the expected input box.
+1. test to see that we have a reapeated "Awsome Thing" on the page.  
+1. Tests that there is expected text of a single "Awsome thing".  This "Awsome Thing" is represented on the page via a astrolabe module.  All parts that make up an "Awsome Thing" are handled via the module awsome-thing-module.js
 
 
 #Projects used in this example
