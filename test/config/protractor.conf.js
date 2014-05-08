@@ -9,7 +9,7 @@ exports.config = {
 	verbose: true,
 	specs: ['../e2e/protractor/**/*.spec.js'],
 
-	capabilities: 'firefox',
+	capabilities: { browserName: 'firefox'},
 
 	rootElement: 'body',
 
