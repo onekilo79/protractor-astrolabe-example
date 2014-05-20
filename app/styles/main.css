@@ -76,6 +76,8 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
-  .type, .name { margin-right : 5px;}
-  .name {font-weight: bold; }
+  .name {
+    font-weight: bold;
+    margin-left: 5px;
+  }
 }
