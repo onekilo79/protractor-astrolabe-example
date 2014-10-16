@@ -3,17 +3,21 @@
 var SERVER_URL = 'http://localhost';
 
 exports.config = {
-	seleniumAddress: SERVER_URL + ':4444/wd/hub',
+	framework: 'cucumber',
 
 	seleniumArgs: [],
-	verbose: true,
-	specs: ['../e2e/**/*.spec.js'],
-
-	capabilities: { browserName: 'firefox'},
-
-	rootElement: 'body',
+	seleniumAddress: SERVER_URL + ':4444/wd/hub',
 
 	baseUrl: SERVER_URL + ':9000',
+
+	verbose: true,
+	specs: ['../e2e/features/*.feature'],
+
+	capabilities: { // chrome, firefox
+		browserName: 'firefox'
+	},
+
+	rootElement: 'body',
 
 	jasmineNodeOpts: {
 		// onComplete will be called just before the driver quits.

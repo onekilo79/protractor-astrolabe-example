@@ -1,7 +1,8 @@
+/*global protractor*/
 'use strict';
 
 describe('Search Spec |', function () {
-	var searchPage = require('../page/search-page'),
+	var searchPage = require('../page/search.page'),
 		ptor;
 
 	beforeEach( function (){
@@ -33,7 +34,7 @@ describe('Search Spec |', function () {
 			//index 1 is the first entry
 			//look for the name of the first element
 			searchPage.awsomeThing( 1 ).name.getText().then( function ( textValue ) {
-				 return expect( textValue ).toEqual( 'HTML5 Boilerplate' );
+				return expect( textValue ).toEqual( 'HTML5 Boilerplate' );
 			});
 
 		});

@@ -1,5 +1,5 @@
 'use strict';
-var awsomeThing = require('../../protractor/modules/awsome-thing-module');
+var awsomeThing = require('../modules/awsome-thing-module');
 
 var Page = require('astrolabe').Page;
 
