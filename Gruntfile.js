@@ -343,6 +343,12 @@ module.exports = function (grunt) {
           keepAlive: true
         }
       },
+      cucumber: {
+        options : {
+          configFile: 'test/config/protractor.cucumber.conf.js',
+          keepAlive: true
+        }
+      },
       debug: {
         options : {
           configFile: 'test/config/protractor.conf.js',
