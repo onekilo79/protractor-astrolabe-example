@@ -1,5 +1,6 @@
 protractor-astrolabe-example
 ============================
+(update 16/10/14 now including cucumber protractor tests)
 #Explanation
 
 This is a tiny example project showing end to end browser based testing for an angularjs project.
@@ -126,10 +127,43 @@ This will now open a browser window showing you a single input box running on th
 	http:localhost:9000/#/
 
 
-##3. Run the protractor tests
+##3. Run the Protractor tests
 Create the third terminal window and run the following.
 
 	grunt protractor:e2e
+
+### Source
+
+#### Pages
+test/e2e/page
+#### Modules
+test/e2e/moudles
+#### Tests
+test/e2e/specs
+
+You will see it pop up a selenium firefox browser and run the test.  After the test is finished it will close the browser window.
+
+There will be information printed on the command line of the tests being run and assertions.
+
+
+##4. Run the Protractor Cucumber tests
+Reuse the third terminal window and run the following.
+
+	grunt protractor:cucumber
+
+### Source
+**The root source is located in test/e2e/specs**
+
+This uses the protractor astrolabe style tests. 
+
+It reuses the source (pages and modules from above.)
+
+#### Features
+test/e2e/features/search.feature
+#### Steps
+test/e2e/features/steps/
+#### Setup
+test/e2e/features/setup/world.js
 
 You will see it pop up a selenium firefox browser and run the test.  After the test is finished it will close the browser window.
 
