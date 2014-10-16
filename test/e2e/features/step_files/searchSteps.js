@@ -1,4 +1,3 @@
-/*global assert*/
 'use strict';
 
 var searchPage = require( '../../page/search.page' );
